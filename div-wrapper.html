@@ -14,15 +14,13 @@
             <div class="rectangle-6"></div>
             <div class="rectangle-7"></div>
             <div class="rectangle-8"></div>
-            <div class="amount-RS">Amount: 10,150 RS</div>
-            <a href="screen-8.html"><div class="text-wrapper-22">Confirm Payment</div></a>
-            <div class="rectangle-9"></div>
-            <div class="auction-time">Auction Time: 06:00:00</div>
-            <div class="rectangle-10"></div>
-            <div class="text-wrapper-23">OTP: ___</div>
-            <div class="text-wrapper-24">Steel Chair</div>
-            <img class="image-4" src="https://c.animaapp.com/5thpqLCQ/img/image-4@2x.png" />
+                <div class="amount-RS" id="bidAmount"></div>
+                <input type="text" class="text-wrapper-23" id="otpInput" placeholder="Enter OTP" required>
+                <div class="auction-time" id="auctionStatus">Finished</div>
+                <div class="text-wrapper-24" id="productName"></div>
+                <img id="auctionImage" class="image-4" src="" alt="Bid Image">
           </div>
+           <button class="text-wrapper-22" id="confirmButton">Confirm Payment</button>
           <img class="line-7" src="https://c.animaapp.com/5thpqLCQ/img/line-6-5.svg" />
           <img class="line-8" src="https://c.animaapp.com/5thpqLCQ/img/line-6-5.svg" />
         </div>
@@ -38,5 +36,7 @@
         <a href="screen-6.html"><div class="text-wrapper-28">Bids</div></a>
       </div>
     </div>
+
+    <script src="div-wrapper.js" defer></script>
   </body>
 </html>

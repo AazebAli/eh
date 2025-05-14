@@ -5,48 +5,51 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="screen-4.css" />
+    <script defer src="screen-4.js"></script>
   </head>
   <body>
     <div class="screen-4" data-model-id="1:254">
       <div class="wireframe-5">
         <div class="overlap-group-6">
           <div class="overlap-15">
-            <img class="image-9" src="https://c.animaapp.com/5thpqLCQ/img/image-11@2x.png" />
-            <img class="image-10" src="https://c.animaapp.com/5thpqLCQ/img/image-12@2x.png" />
-            <img class="image-11" src="https://c.animaapp.com/5thpqLCQ/img/image-13@2x.png" />
-            <img class="image-12" src="https://c.animaapp.com/5thpqLCQ/img/image-14@2x.png" />
-            <div class="overlap-15">
-              <img class="line-12" src="https://c.animaapp.com/5thpqLCQ/img/line-6-5.svg" />
-              <img class="line-13" src="https://c.animaapp.com/5thpqLCQ/img/line-7-3.svg" />
-              <img class="line-14" src="https://c.animaapp.com/5thpqLCQ/img/line-6-2.svg" />
-            </div>
+            <img id="auctionImage" class="image-9" src="" alt="Product Image" />
           </div>
+
           <div class="overlap-16">
             <div class="rectangle-15"></div>
-            <div class="amount-RS-2">&nbsp;&nbsp;Amount: 18,000 RS</div>
+            <div class="text-wrapper-39" id="auctionName">Loading...</div>
           </div>
-          <div class="overlap-17">
-            <a href="screen-6.html"><div class="rectangle-16"></div></a>
-            <a href="screen-6.html"><div class="text-wrapper-36">Place Bid</div></a>
-          </div>
+
           <div class="overlap-18">
             <div class="rectangle-15"></div>
-            <div class="text-wrapper-37">Starting Price: 15,000 RS</div>
+            <div class="text-wrapper-37" id="startingPrice">Starting Price: Loading...</div>
           </div>
-          <div class="overlap-19">
-            <div class="rectangle-15"></div>
-            <div class="text-wrapper-37">Current Bid: 17,500 RS</div>
-          </div>
+
+          <!-- <div class="overlap-19"> -->
+            <!-- <div class="rectangle-15"></div> -->
+            <div class="text-wrapper-95" id="currentBid"></div> <!-- where your supposed to put current highest bid  -->
+          <!-- </div> -->
+
           <div class="overlap-20">
             <div class="rectangle-17"></div>
-            <div class="text-wrapper-38">Auction End: 00:40:34</div>
+            <div class="text-wrapper-38" id="auctionEndTime">Auction End: Loading...</div>
           </div>
-          <div class="text-wrapper-39">Blue Wooden Chair</div>
+
+          <div class="overlap-21">
+            <div class="rectangle-19"></div>
+            <input type="number" id="bidAmount" class="text-wrapper-44" placeholder="Enter bid amount" />
+          </div>
+
+          <div class="overlap-17">
+            <button id="placeBidButton" class="rectangle-16">Place Bid</button> 
+          </div>
         </div>
+
         <img class="text-on-a-path-7" src="img/text-on-a-path-6.svg" />
         <img class="text-on-a-path-8" src="img/image.svg" />
         <div class="rectangle-18"></div>
         <img class="logo-6" src="https://c.animaapp.com/5thpqLCQ/img/logo-1-9@2x.png" />
+
         <a href="screen-8.html"><div class="text-wrapper-40">Account</div></a>
         <a href="index.html"><div class="text-wrapper-41">About</div></a>
         <a href="wireframe-screen.html"><div class="text-wrapper-42">Contact us</div></a>

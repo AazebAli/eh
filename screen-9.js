@@ -10,12 +10,20 @@ window.addEventListener('DOMContentLoaded', async () => {
       return;
     }
 
-    // Sort auctions by end time in descending order (newer ones first)
+    // Sort auctions by end time (newest first)
     auctions.sort((a, b) => new Date(b.end_time) - new Date(a.end_time));
 
     auctions.forEach(auction => {
       const card = document.createElement('div');
       card.className = 'auction-card';
+      
+      // Make each auction clickable for redirection
+      card.addEventListener('click', () => {
+        window.location.href = `screen-4.html?product=${encodeURIComponent(auction.product_name)}
+        &price=${encodeURIComponent(auction.starting_price)}
+        &endTime=${encodeURIComponent(auction.end_time)}
+        &image=${encodeURIComponent(auction.img_url)}`;
+      });
 
       card.innerHTML = `
         <img src="${auction.img_url}" alt="${auction.product_name}" class="auction-image"/>

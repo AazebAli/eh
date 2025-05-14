@@ -460,7 +460,7 @@
   .screen-6 .text-wrapper-64 {
     position: absolute;
     width: 135px;
-    height: 100px;
+    height: 180px;
     top: 0px;
     padding-top: 5.5%;
     left: 878px;
@@ -471,12 +471,13 @@
     text-align: center;
     letter-spacing: 2.00px;
     line-height: normal;
+     border-bottom: 3px solid #ffffff;
   }
   
   .screen-6 .text-wrapper-65 {
     position: absolute;
     width: 135px;
-    height: 100px;
+    height: 180px;
     top: 0px;
     padding-top: 5.5%;
     left: 1021px;
@@ -487,12 +488,13 @@
     text-align: center;
     letter-spacing: 2.00px;
     line-height: normal;
+     border-bottom: 3px solid #ffffff;
   }
   
   .screen-6 .text-wrapper-66 {
     position: absolute;
     width: 135px;
-    height: 100px;
+    height: 180px;
     top: 0px;
     padding-top: 5.5%;
     left: 1163px;
@@ -503,12 +505,13 @@
     text-align: center;
     letter-spacing: 2.00px;
     line-height: normal;
+     border-bottom: 3px solid #ffffff;
   }
   
   .screen-6 .text-wrapper-67 {
     position: absolute;
     width: 135px;
-    height: 100px;
+    height: 180px;
     top: 0px;
     padding-top: 5.5%;
     left: 1306px;
@@ -519,5 +522,63 @@
     text-align: center;
     letter-spacing: 2.00px;
     line-height: normal;
+     border-bottom: 3px solid #ffffff;
   }
+  .rectangle-56 {
+  position: absolute;
+  width: 900px; /* Adjust width as needed */
+  height: 600px; /* Fixed height to control scrolling */
+  overflow-y: auto; /* Enables vertical scrolling ONLY inside this box */
+  border: 2px solid #ffffff; /* Creates a clear boundary */
+  padding: 10px;
+  margin: auto;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  color: #535353;
+  text-align: center;
+  top: 50px;
+  right: 330px;
+}
+
+.auction-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
   
+  /* position: absolute; */
+}
+
+.bidContainer {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+  background: rgb(0, 0, 0);
+  color: #535353;
+  text-align: center;
+  font-family: "JetBrains Mono", Helvetica;
+}
+.rectangle-76
+{
+   width: 250px; /* Adjust width as needed */
+  height: 100px; /* Fixed height to control scrolling */
+  overflow-y: auto; /* Enables vertical scrolling ONLY inside this box */
+  border: 2px solid #ffffff; /* Creates a clear boundary */
+  padding: 10px;
+  margin: auto;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 200px;
+  right: -20px;
+  text-align: center;
+  font-family: "JetBrains Mono", Helvetica;
+  padding-top: 2.5%;
+  color: #535353;
+  
+  font-size: 20px;
+}
+.rectangle-76:hover
+{
+  color:#000000;
+}

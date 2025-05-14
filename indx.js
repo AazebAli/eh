@@ -145,6 +145,115 @@ app.get('/get-auctions', async (req, res) => {
   }
 });
 
+app.post('/place-bid', async (req, res) => {
+  console.log("Incoming bid request:", req.body);
+
+  const auction_id = req.body.auction_id || req.headers['auction_id'];
+  const buyer_id = req.body.buyer_id || req.headers['buyer_id'];
+  const bid_amount = req.body.bid_amount || req.headers['bid_amount']; // Alternative way to get bid amount
+
+  if (!buyer_id) {
+    console.error("ERROR: Missing buyer ID.");
+    return res.status(401).json({ error: "Unauthorized: User must be logged in." });
+  }
+
+  if (!auction_id) {
+    console.error("ERROR: Missing auction ID.");
+    return res.status(400).json({ error: "Auction ID is required." });
+  }
+
+  if (!bid_amount) {
+    console.error("ERROR: Missing bid amount.");
+    return res.status(400).json({ error: "Bid amount is required." });
+  }
+
+  console.log("Final Bid Data:", { auction_id, buyer_id, bid_amount });
+
+  try {
+    const newBid = await pool.query(
+      "INSERT INTO bids (auction_id, buyer_id, bid_amount) VALUES ($1, $2, $3) RETURNING bid_id, bid_amount, sent_at",
+      [auction_id, buyer_id, bid_amount]
+    );
+
+    console.log("Bid Inserted Successfully:", newBid.rows[0]);
+    res.json({ message: "Bid placed successfully", bid: newBid.rows[0] });
+
+  } catch (err) {
+    console.error("SQL ERROR:", err);
+    res.status(500).json({ error: "Failed to place bid", details: err.message });
+  }
+});
+
+
+
+// Fetch latest bid for an auction
+app.get('/latest-bid/:auction_id', async (req, res) => {
+  try {
+    const { auction_id } = req.params;
+
+    const latestBid = await pool.query(
+      'SELECT bid_amount FROM bids WHERE auction_id = $1 ORDER BY bid_amount DESC LIMIT 1',
+      [auction_id]
+    );
+
+    res.json({ latest_bid: latestBid.rows[0]?.bid_amount || 'No bid yet' });
+  } catch (err) {
+    console.error('Error fetching latest bid:', err);
+    res.status(500).json({ error: 'Failed to retrieve latest bid', details: err.message });
+  }
+});
+
+app.get('/get-user-bids', async (req, res) => {
+    const { user_id } = req.query;
+
+    try {
+        const result = await pool.query(`
+            SELECT b.bid_amount, b.sent_at, p.product_name, p.img_url 
+            FROM bids b 
+            JOIN products p ON b.auction_id = p.product_id 
+            WHERE b.buyer_id = $1 
+            ORDER BY b.sent_at DESC
+        `, [user_id]);
+
+        res.json(result.rows);
+    } catch (err) {
+        console.error("Error fetching user bids:", err.message);
+        res.status(500).json({ error: "Failed to retrieve user bids" });
+    }
+});
+
+app.post("/confirm-payment", async (req, res) => {
+    const { auction_id, buyer_id, amount, otp } = req.body;
+
+    if (!auction_id || !buyer_id || amount == null || !otp) {
+        return res.status(400).json({ error: "Missing required payment details." });
+    }
+
+    try {
+        const validOtp = await validateOtp(buyer_id, otp); // Dummy function to validate OTP
+        if (!validOtp) {
+            return res.status(400).json({ error: "Invalid OTP." });
+        }
+
+        // Fixing table name reference (from `bid` to `bids`)
+        const result = await pool.query(
+            `INSERT INTO payment (auction_id, buyer_id, amount) VALUES ($1, $2, $3) RETURNING *`,
+            [auction_id, buyer_id, amount]
+        );
+
+        res.json({ message: "Payment recorded successfully", payment: result.rows[0] });
+    } catch (err) {
+        console.error("Error processing payment:", err.message);
+        res.status(500).json({ error: "Failed to store payment." });
+    }
+});
+
+
+app.listen(3000, () => {
+    console.log("Server running on port 3000...");
+});
+
+
 
 
 // Start the server
