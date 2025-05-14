@@ -1,0 +1,442 @@
+.wireframe {
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .wireframe .div {
+    background-color: #000000;
+    overflow: hidden;
+    width: 1440px;
+    height: 2880px;
+    position: relative;
+  }
+  
+  .wireframe .line {
+    position: absolute;
+    width: 1440px;
+    height: 3px;
+    top: 1073px;
+    left: 0;
+  }
+  
+  .wireframe .overlap {
+    position: absolute;
+    width: 1440px;
+    height: 900px;
+    top: 1076px;
+    left: 0;
+  }
+  
+  .wireframe .overlap-group {
+    position: absolute;
+    width: 1440px;
+    height: 900px;
+    top: 0;
+    left: 0;
+  }
+  
+  .wireframe .img {
+    position: absolute;
+    width: 3px;
+    height: 900px;
+    top: 0;
+    left: 357px;
+  }
+  
+  .wireframe .line-2 {
+    position: absolute;
+    width: 3px;
+    height: 900px;
+    top: 0;
+    left: 717px;
+  }
+  
+  .wireframe .line-3 {
+    position: absolute;
+    width: 3px;
+    height: 900px;
+    top: 0;
+    left: 1077px;
+  }
+  
+  .wireframe .line-4 {
+    position: absolute;
+    width: 3px;
+    height: 900px;
+    top: 0;
+    left: 1437px;
+  }
+  
+  .wireframe .line-5 {
+    position: absolute;
+    width: 1440px;
+    height: 3px;
+    top: 897px;
+    left: 0;
+  }
+  
+  .wireframe .bag {
+    position: absolute;
+    width: 330px;
+    height: 450px;
+    top: 450px;
+    left: 375px;
+    object-fit: cover;
+  }
+  
+  .wireframe .bottle {
+    position: absolute;
+    width: 330px;
+    height: 450px;
+    top: 450px;
+    left: 735px;
+    object-fit: cover;
+  }
+  
+  .wireframe .image {
+    position: absolute;
+    width: 330px;
+    height: 450px;
+    top: 450px;
+    left: 1095px;
+    object-fit: cover;
+  }
+  
+  .wireframe .overlap-group-2 {
+    position: absolute;
+    width: 259px;
+    height: 395px;
+    top: 143px;
+    left: 44px;
+  }
+  
+  .wireframe .text-wrapper {
+    position: absolute;
+    width: 259px;
+    height: 128px;
+    top: 0;
+    left: 0;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 2.00px;
+    line-height: normal;
+  }
+  
+  .wireframe .electronics-fashion {
+    position: absolute;
+    width: 234px;
+    height: 275px;
+    top: 120px;
+    left: 0;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 1.80px;
+    line-height: 30px;
+  }
+  
+  .wireframe .text-wrapper-2 {
+    position: absolute;
+    width: 259px;
+    height: 128px;
+    top: 143px;
+    left: 410px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: normal;
+  }
+  
+  .wireframe .text-wrapper-3 {
+    position: absolute;
+    width: 259px;
+    height: 128px;
+    top: 143px;
+    left: 770px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: normal;
+  }
+  
+  .wireframe .text-wrapper-4 {
+    position: absolute;
+    width: 260px;
+    height: 128px;
+    top: 143px;
+    left: 1130px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: normal;
+  }
+  
+  .wireframe .overlap-2 {
+    position: absolute;
+    width: 360px;
+    height: 529px;
+    top: 2042px;
+    left: 1065px;
+  }
+  
+  .wireframe .rectangle {
+    position: absolute;
+    width: 360px;
+    height: 50px;
+    top: 479px;
+    border: 3px solid;
+    left: -3px;
+    background-color: #000000;
+    border-color: #ffffff;
+  }
+  
+  .wireframe .text-wrapper-5 {
+    position: absolute;
+    width: 273px;
+    height: 50px;
+    top: 495px;
+    left: 50px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: normal;
+
+  }
+  
+  .wireframe .whatsapp-image {
+    position: absolute;
+    width: 360px;
+    height: 479px;
+    top: 0;
+    left: -3px;
+    object-fit: cover;
+    background-color: #000000;
+    border: 3px solid #ffffff;
+  }
+  
+  .wireframe .text-wrapper-6 {
+    position: absolute;
+    width: 199px;
+    height: 32px;
+    top: 315px;
+    left: 104px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 2.40px;
+    line-height: normal;
+  }
+  
+  .wireframe .founded-by-ali-raza {
+    position: absolute;
+    width: 454px;
+    height: 192px;
+    top: 500px;
+    left: 105px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 1.20px;
+    line-height: normal;
+  }
+  
+  .wireframe .p {
+    position: absolute;
+    width: 454px;
+    height: 192px;
+    top: 2338px;
+    left: 150px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 1.20px;
+    line-height: normal;
+  }
+  
+  .wireframe .text-wrapper-7 {
+    position: absolute;
+    width: 197px;
+    height: 37px;
+    top: 383px;
+    left: 105px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 700;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 1.80px;
+    line-height: normal;
+  }
+  
+  .wireframe .text-wrapper-8 {
+    position: absolute;
+    width: 272px;
+    height: 106px;
+    top: 2100px;
+    left: 80px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: normal;
+  }
+  
+  .wireframe .m-aliraza-yahoo-com {
+    position: absolute;
+    width: 304px;
+    height: 165px;
+    top: 2157px;
+    left: 150px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 1.80px;
+    line-height: 38px;
+  }
+  
+  .wireframe .text-wrapper-9 {
+    position: absolute;
+    width: 361px;
+    height: 71px;
+    top: 2728px;
+    left: 539px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .wireframe .logo {
+    position: absolute;
+    width: 137px;
+    height: 137px;
+    top: 2245px;
+    left: 773px;
+    object-fit: cover;
+  }
+  
+  .wireframe .line-6 {
+    position: absolute;
+    width: 1440px;
+    height: 3px;
+    top: 2649px;
+    left: 0;
+  }
+  
+  .wireframe .image-2 {
+    position: absolute;
+    width: 540px;
+    height: 800px;
+    top: 265px;
+    left: 900px;
+    object-fit: cover;
+  }
+  
+  .wireframe .rectangle-2 {
+    position: scroll;
+    width: 1440px;
+    height: 180px;
+    top: 0;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    left: 0;
+    background-color: #000000;
+    border-color: #ffffff;
+  }
+  
+  .wireframe .logo-2 {
+    position: absolute;
+    width: 104px;
+    height: 104px;
+    top: 38px;
+    left: 53px;
+    object-fit: fill-box;
+  }
+  
+  .wireframe .text-wrapper-10 {
+    position: absolute;
+    width: 135px;
+    height: 180px;
+    top: 80px;
+    left: 877px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: normal;
+  }
+  
+  .wireframe .text-wrapper-11 {
+    position: absolute;
+    width: 135px;
+    height: 180px;
+    top: 80px;
+    left: 1020px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: normal;
+  }
+  
+  .wireframe .text-wrapper-12 {
+    position: absolute;
+    width: 135px;
+    height: 180px;
+    top: 80px;
+    left: 1162px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: normal;
+  }
+  
+  .wireframe .text-wrapper-13 {
+    position: absolute;
+    width: 135px;
+    height: 180px;
+    top: 80px;
+    left: 1305px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: normal;
+  }
+  

@@ -1,0 +1,413 @@
+.screen-3 {
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .screen-3 .wireframe-4 {
+    background-color: #000000;
+    overflow: hidden;
+    width: 1440px;
+    height: 1080px;
+    position: relative;
+  }
+  
+  .screen-3 .overlap-group-5 {
+    position: absolute;
+    width: 1440px;
+    height: 900px;
+    top: 180px;
+    left: 0;
+    background-image: url(https://c.animaapp.com/5thpqLCQ/img/image-5.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .screen-3 .overlap-9 {
+    position: absolute;
+    width: 1013px;
+    height: 900px;
+    top: 0;
+    left: 0;
+  }
+  
+  .screen-3 .image-5 {
+    position: absolute;
+    width: 491px;
+    height: 430px;
+    top: 10px;
+    left: 8px;
+    object-fit: cover;
+  }
+  
+  .screen-3 .image-6 {
+    top: 456px;
+    left: 515px;
+    position: absolute;
+    width: 491px;
+    height: 430px;
+    object-fit: cover;
+  }
+  
+  .screen-3 .image-7 {
+    top: 450px;
+    left: 8px;
+    position: absolute;
+    width: 491px;
+    height: 430px;
+    object-fit: cover;
+  }
+  
+  .screen-3 .image-8 {
+    top: 10px;
+    left: 514px;
+    position: absolute;
+    width: 491px;
+    height: 430px;
+    object-fit: cover;
+  }
+  
+  .screen-3 .line-9 {
+    position: absolute;
+    width: 3px;
+    height: 900px;
+    top: 0;
+    left: 1010px;
+  }
+  
+  .screen-3 .line-10 {
+    position: absolute;
+    width: 1013px;
+    height: 2px;
+    top: 444px;
+    left: 0;
+  }
+  
+  .screen-3 .line-11 {
+    position: absolute;
+    width: 2px;
+    height: 900px;
+    top: 0;
+    left: 507px;
+  }
+  
+  .screen-3 .overlap-10 {
+    position: absolute;
+    width: 376px;
+    height: 51px;
+    top: 446px;
+    left: 1042px;
+  }
+  
+  .screen-3 .rectangle-12 {
+    position: absolute;
+    width: 375px;
+    height: 50px;
+    top: 1px;
+    left: 0;
+    background-color: #000000;
+    border: 2px solid;
+    border-color: #ffffff;
+  }
+  
+  .screen-3 .time-extend-bid {
+    position: absolute;
+    width: 375px;
+    height: 50px;
+    top: 0px;
+    left: 1px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #585858;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1.80px;
+    line-height: normal;
+    padding-top: 4%;
+  }
+  
+  .screen-3 .overlap-11 {
+    position: absolute;
+    width: 187px;
+    height: 51px;
+    top: 521px;
+    left: 1136px;
+  }
+  
+  .screen-3 .rectangle-13 {
+    position: absolute;
+    width: 187px;
+    height: 50px;
+    top: 1px;
+    border: 2px solid;
+    left: 0;
+    background-color: #000000;
+    border-color: #ffffff;
+  }
+  .screen-3 .product-name
+  {
+    position: absolute;
+    width: 375px;
+    height: 50px;
+    top: 16%;
+    right: 1.6%;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #585858;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1.80px;
+    line-height: normal;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    padding-top: 0.9%;
+  }
+  .screen-3 .text-wrapper-29 {
+    position: absolute;
+    width: 187px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #585858;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1.80px;
+    line-height: normal;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+  }
+  .screen-3 .text-wrapper-29:active
+  {
+    color:#000000;
+  }
+  
+  .screen-3 .overlap-12 {
+    position: absolute;
+    width: 375px;
+    height: 51px;
+    top: 221px;
+    left: 1042px;
+  }
+  
+  .screen-3 .text-wrapper-30 {
+    position: absolute;
+    width: 375px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #585858;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1.80px;
+    line-height: normal;
+    padding-top: 4%;
+  }
+  
+  .screen-3 .overlap-13 {
+    position: absolute;
+    width: 375px;
+    height: 51px;
+    top: 296px;
+    left: 1042px;
+  }
+  
+  .screen-3 .auction-start-time {
+    position: absolute;
+    width: 475px;
+    height: 50px;
+    top: 0px;
+    left: -30px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #585858;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1.70px;
+    line-height: normal;
+    padding-top: 4%;
+  
+  }
+  
+  .screen-3 .overlap-14 {
+    position: absolute;
+    width: 375px;
+    height: 51px;
+    top: 371px;
+    left: 1043px;
+  }
+  
+  .screen-3 .text-wrapper-31 {
+    position: absolute;
+    width: 225px;
+    height: 50px;
+    top: 146px;
+    left: 1117px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #fffcfc;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: normal;
+  }
+  
+  .screen-3 .text-on-a-path-5 {
+    position: absolute;
+    width: 225px;
+    height: 50px;
+    top: -620px;
+    left: -7309px;
+  }
+  
+  .screen-3 .text-on-a-path-6 {
+    position: absolute;
+    width: 225px;
+    height: 50px;
+    top: -920px;
+    left: -7309px;
+  }
+  
+  .screen-3 .rectangle-14 {
+    position: absolute;
+    width: 1440px;
+    height: 180px;
+    top: 0;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    left: 0;
+    background-color: #000000;
+    border-color: #ffffff;
+  }
+  
+  .screen-3 .logo-5 {
+    position: absolute;
+    width: 104px;
+    height: 104px;
+    top: 38px;
+    left: 53px;
+    object-fit: cover;
+  }
+  
+  .screen-3 .text-wrapper-32 {
+    position: absolute;
+    width: 135px;
+    height: 100px;
+    top: 0px;
+    left: 878px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    padding-top: 5.5%;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: normal;
+
+  }
+  
+  .screen-3 .text-wrapper-33 {
+    position: absolute;
+    width: 135px;
+    height: 100px;
+    top: 0px;
+    left: 1020px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    padding-top: 5.5%;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: normal;
+  }
+  
+  .screen-3 .text-wrapper-34 {
+    position: absolute;
+    width: 135px;
+    height: 100px;
+    top: 0px;
+    left: 1163px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    padding-top: 5.5%;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: normal;
+  }
+  
+  .screen-3 .text-wrapper-35 {
+    position: absolute;
+    width: 135px;
+    height: 100px;
+    top: 0px;
+    left: 1305px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    padding-top: 5.5%;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: normal;
+  }
+  .screen-3 .image-5
+  {
+    position: absolute;
+    top: 200px;
+    left: 5px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: normal;
+
+  }
+  .screen-3 .image-6
+  {
+    position: absolute;
+    top: 200px;
+    left: 515px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: normal;
+  }
+  .screen-3 .image-7
+  {
+    position: absolute;
+    top: 690px;
+    left: 5px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: normal;
+  } 
+   .screen-3 .image-8
+  {
+    position: absolute;
+    top: 690px;
+    left: 515px;
+    font-family: "JetBrains Mono", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 2.00px;
+    line-height: normal;
+  }
