@@ -64,7 +64,7 @@ app.post('/login', async (req, res) => {
   }
 });
 // Route to add a product
-app.post('/add-product', async (req, res) => {
+app.post('/add-product', (req, res) => {
   const {
     seller_id,
     product_name,
@@ -74,16 +74,21 @@ app.post('/add-product', async (req, res) => {
     start_time
   } = req.body;
 
-  try {
-    await pool.query(
-      'INSERT INTO products (seller_id, product_name, starting_price, IMG_url,end_time,start_time) VALUES ($1, $2, $3, $4,$5,$6)',
-      [seller_id, product_name, starting_price, image_url,end_time,start_time]
-    );
-    res.json({ message: 'Product added successfully' });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: err.message });
-  }
+  pool.query(
+    'INSERT INTO products (seller_id, product_name, starting_price, IMG_url, end_time, start_time) VALUES ($1, $2, $3, $4, $5, $6) RETURNING product_id',
+    [seller_id, product_name, starting_price, image_url, end_time, start_time]
+  )
+  .then(result => {
+    const productId = result.rows[0].product_id;
+    res.status(200).json({
+      message: 'Product added successfully',
+      product_id: productId
+    });
+  })
+  .catch(err => {
+    console.error('Error adding product:', err.message);
+    res.status(500).json({ error: 'Failed to add product' });
+  });
 });
 
 app.post('/submit-problem', async (req, res) => {
@@ -101,6 +106,27 @@ app.post('/submit-problem', async (req, res) => {
   }
   
 });
+app.post('/create-auction', (req, res) => {
+  const { prod_id, start_time, end_time } = req.body;
+
+  if (!prod_id || !start_time || !end_time) {
+    return res.status(400).json({ error: 'Missing auction details' });
+  }
+
+  pool.query(
+    'INSERT INTO auction (prod_id, start_time, end_time) VALUES ($1, $2, $3)',
+    [prod_id, start_time, end_time]
+  )
+  .then(() => {
+    res.status(200).json({ message: 'Auction created successfully' });
+  })
+  .catch(err => {
+    console.error('Error creating auction:', err.message);
+    res.status(500).json({ error: 'Failed to create auction' });
+  });
+});
+
+
 
 // Start the server
 app.listen(port, () => {
