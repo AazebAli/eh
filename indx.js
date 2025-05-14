@@ -125,6 +125,25 @@ app.post('/create-auction', (req, res) => {
     res.status(500).json({ error: 'Failed to create auction' });
   });
 });
+app.get('/get-auctions', async (req, res) => {
+  try {
+    const result = await pool.query(`
+      SELECT 
+        p.product_name,
+        p.starting_price,
+        p.img_url,
+        a.end_time
+      FROM auction a
+      JOIN products p ON a.prod_id = p.product_id
+      ORDER BY a.end_time ASC
+    `);
+
+    res.json(result.rows);
+  } catch (err) {
+    console.error('Error fetching auctions:', err.message);
+    res.status(500).json({ error: 'Failed to retrieve auctions' });
+  }
+});
 
 
 

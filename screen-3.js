@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    if (!imageUrl.match(/\.(jpeg|jpg|gif|png)$/i)) {
-      alert('Please enter a valid image URL (ending with .jpg, .png, etc.)');
-      return;
-    }
+    // if (!imageUrl.match(/\.(jpeg|jpg|gif|png)$/i)) {
+    //   alert('Please enter a valid image URL (ending with .jpg, .png, etc.)');
+    //   return;
+    // }
 
     // Prepare product data
     const productData = {

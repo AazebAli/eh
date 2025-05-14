@@ -350,4 +350,77 @@
     letter-spacing: 2.00px;
     line-height: normal;
   }
+  /* .auction-card {
+  background: white;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  text-align: center;
+  font-family: "JetBrains Mono", Helvetica;
+}
+
+.auction-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+} */
+
+/* Ensure the parent container (rectangle-56) contains the scrolling */
+.rectangle-56 {
+  /* position: absolute; */
+  width: 700px; /* Adjust width as needed */
+  height: 400px; /* Fixed height to control scrolling */
+  overflow-y: auto; /* Enables vertical scrolling ONLY inside this box */
+  border: 2px solid #ffffff; /* Creates a clear boundary */
+  padding: 10px;
+  margin: auto;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
   
+}
+
+.auction-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* position: absolute; */
+}
+
+.auction-card {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+  background: rgb(0, 0, 0);
+  color: #535353;
+  text-align: center;
+  font-family: "JetBrains Mono", Helvetica;
+}
+.screen-9 .rectangle-76
+{
+   width: 250px; /* Adjust width as needed */
+  height: 100px; /* Fixed height to control scrolling */
+  overflow-y: auto; /* Enables vertical scrolling ONLY inside this box */
+  border: 2px solid #ffffff; /* Creates a clear boundary */
+  padding: 10px;
+  margin: auto;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 200px;
+  right: -20px;
+  text-align: center;
+  font-family: "JetBrains Mono", Helvetica;
+  color: #535353;
+  padding-top: 3% ;
+  font-size: 20px;
+}
+.rectangle-76:hover
+{
+  background-color: #535353;
+}
+
+
+
+
