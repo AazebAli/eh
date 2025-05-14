@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const startingPrice = parseFloat(document.getElementById('text-wrapper-30').value);
     const imageUrl = document.getElementById('image-5').value; // ✅ Updated to use a text field
     const auctionEndTime = document.getElementById('auction-end-time').value;
-
+    const auctionstarttime = document.getElementById('auction-start-time').value;
     if (!imageUrl.match(/\.(jpeg|jpg|gif|png)$/i)) {
       alert('Please enter a valid image URL (ending with .jpg, .png, etc.)');
       return;
@@ -29,12 +29,17 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Please provide auction end time.');
         return;
     }
+    if (!auctionstarttime) {
+        alert('Please provide auction start time.');
+        return;
+    }
     const productData = {
       seller_id,
       product_name: productName,
       starting_price: startingPrice,
       image_url: imageUrl,
-      end_time: auctionEndTime
+      end_time: auctionEndTime,
+      start_time: auctionstarttime
     };
 
     try {

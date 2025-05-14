@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const result = await response.json();
       alert(result.message);
+       window.location.href = "index.html";
     } catch (error) {
       console.error("Submission error:", error);
       alert("Failed to submit query.");

@@ -310,7 +310,10 @@
     line-height: normal;
 
   }
-  
+   .screen-3 .text-wrapper-32 :hover
+   {
+      color: #585858;
+   }
   .screen-3 .text-wrapper-33 {
     position: absolute;
     width: 135px;
@@ -326,7 +329,10 @@
     letter-spacing: 2.00px;
     line-height: normal;
   }
-  
+   .screen-3 .text-wrapper-33 :hover
+   {
+      color: #585858;
+   }
   .screen-3 .text-wrapper-34 {
     position: absolute;
     width: 135px;
@@ -342,7 +348,10 @@
     letter-spacing: 2.00px;
     line-height: normal;
   }
-  
+   .screen-3 .text-wrapper-34 :hover
+   {
+      color: #585858;
+   }
   .screen-3 .text-wrapper-35 {
     position: absolute;
     width: 135px;
@@ -358,6 +367,10 @@
     letter-spacing: 2.00px;
     line-height: normal;
   }
+   .screen-3 .text-wrapper-35 :hover
+   {
+      color: #585858;
+   }
   .screen-3 .image-5
   {
     position: absolute;

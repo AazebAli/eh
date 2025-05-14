@@ -70,13 +70,14 @@ app.post('/add-product', async (req, res) => {
     product_name,
     starting_price,
     image_url,
-    end_time
+    end_time,
+    start_time
   } = req.body;
 
   try {
     await pool.query(
-      'INSERT INTO products (seller_id, product_name, starting_price, IMG_url,end_time) VALUES ($1, $2, $3, $4,$5)',
-      [seller_id, product_name, starting_price, image_url,end_time]
+      'INSERT INTO products (seller_id, product_name, starting_price, IMG_url,end_time,start_time) VALUES ($1, $2, $3, $4,$5,$6)',
+      [seller_id, product_name, starting_price, image_url,end_time,start_time]
     );
     res.json({ message: 'Product added successfully' });
   } catch (err) {
@@ -84,6 +85,7 @@ app.post('/add-product', async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
+
 app.post('/submit-problem', async (req, res) => {
   const { name, email, contact, problem } = req.body;
 
@@ -97,6 +99,7 @@ app.post('/submit-problem', async (req, res) => {
     console.error('Error inserting problem:', err.message);
     res.status(500).json({ error: 'Failed to submit query' });
   }
+  
 });
 
 // Start the server
